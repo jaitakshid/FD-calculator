@@ -1,53 +1,52 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Custom Slider */
 .custom-slider {
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
   height: 4px;
-  background: #e6ddd4;
+  background: #e7dfd6;
   border-radius: 999px;
   outline: none;
 }
 
-/* Track */
+/* Chrome, Edge, Safari */
+.custom-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: #a87a55;
+  border: 3px solid #f5f1eb;
+  cursor: pointer;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+  margin-top: -5px;
+}
+
+/* Firefox */
+.custom-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: #a87a55;
+  border: 3px solid #f5f1eb;
+  cursor: pointer;
+}
+
 .custom-slider::-webkit-slider-runnable-track {
   height: 4px;
   border-radius: 999px;
-  background: #e6ddd4;
 }
 
 .custom-slider::-moz-range-track {
   height: 4px;
   border-radius: 999px;
   background: #e6ddd4;
-}
-
-/* Thumb */
-.custom-slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: #a67b56;
-  border: 3px solid #f5f1eb;
-  cursor: pointer;
-  margin-top: -6px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
-}
-
-.custom-slider::-moz-range-thumb {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: #a67b56;
-  border: 3px solid #f5f1eb;
-  cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 }
