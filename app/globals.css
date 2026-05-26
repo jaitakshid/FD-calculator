@@ -1,5 +1,4 @@
-@import "tailwindcss/preflight";
-@import "tailwindcss/utilities";
+@import "tailwindcss";
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -29,7 +28,7 @@ body {
   background: #e6ddd4;
 }
 
-/* Thumb (circle button) */
+/* Thumb */
 .custom-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
