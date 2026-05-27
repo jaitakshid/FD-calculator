@@ -27,7 +27,7 @@ export default function Display({
     <section className="h-full bg-[#d2b08c] p-6 lg:p-8">
       
       {/* Top Summary */}
-      <div className="grid grid-cols-2 gap-8 pb-4">
+     <div className="grid grid-cols-1 sm:grid-cols-2 gap-[14px]">
         
         <div>
           <p className="text-[11px] font-medium text-[#f4e5d4]">

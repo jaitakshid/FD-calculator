@@ -110,12 +110,14 @@ export default function Form({
           </div>
         </div>
 {/* Interest Payout */}
-<div>
-  <div className="flex items-center justify-between gap-4">
-    
-    <p className="whitespace-nowrap text-[14px] text-[#60584f]">
-      Interest Payout
-    </p>
+
+ <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+  
+  <p className="text-[14px] text-[#60584f]">
+    Interest Payout
+  </p>
+
+  <div className="flex flex-wrap gap-2">
 
     <div className="flex items-center gap-2">
       {payoutOptions.map((option) => (
@@ -123,7 +125,7 @@ export default function Form({
           key={option}
           type="button"
           onClick={() => setPayout(option)}
-          className={`h-[34px] rounded-full px-4 text-[12px] font-medium whitespace-nowrap transition ${
+          className={`h-[34px] rounded-full px-3 sm:px-4 text-[11px] sm:text-[12px] font-medium whitespace-nowrap transition ${
             payout === option
               ? "bg-[#b0865f] text-white"
               : "bg-[#f4ede6] text-[#7d6d5d]"
